@@ -1,0 +1,214 @@
+* {
+	box-sizing: border-box
+}
+body {
+	width: 100%;
+	background-image: url('../images/what-the-hex.png');
+}
+
+.navbar {
+	background-color: #ffffff;
+	border-bottom: solid 2px #cccccc;
+	height: 93px;
+	text-align: center;
+}
+.row {
+	width: 100%;
+}
+
+.container {
+}
+
+
+.container a {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	color: #777777;
+	padding: 7px;
+	padding-left: 15px;
+	margin: 8px;
+
+}
+a:hover {
+	background-color: #4aaaa5;
+	color: white;
+}
+
+.border-thingy {
+	border-left: solid 1px #cccccc;
+}
+
+h1 {
+	background-color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
+	font-size: 26px;
+	color: white;
+	text-align: left;
+	padding: 32.5px;
+	height: 91px;
+	margin: 0;
+	/* margin-top: -5rem; */
+}
+
+header nav a {
+	text-decoration: none;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+main {
+	width: 100%;
+}	
+
+.article {
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 93px;
+	background-color: #ffffff;
+	border: solid 1px #dddddd;
+}
+h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 26px;
+	font-weight: bold;
+	color: #4aaaa5;
+	margin: 0;
+	margin-top: 1rem;
+}
+
+hr {
+	border: 1.8px solid lightgray;
+	width: 900px;
+}
+
+.hero img {
+	width: 215px;
+	height: auto;
+	float: left;
+	padding: 0;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	margin: 0;
+	margin-top: 22px;
+	margin-left: 30px;
+}
+
+.hero {
+	text-align: center;
+}
+.hero img {
+
+}
+/*cheat code to prevent stuff below from bleeding into float area*/
+.cf:before,.cf:after {
+	content: " "; 
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	*zoom: 1;
+}
+
+p {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	color: #777777;
+	line-height: 28px;
+	margin: 30px;
+}
+
+.container2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 9px;
+	margin-top: 40px;
+}
+
+.container2 figure {
+	flex: 0 0 274px;
+	padding: 0;
+	margin: 0;
+	margin-right: 20px;
+	margin-left: 30px;
+}
+
+.container2 figure img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.container2 figure a {
+	text-decoration: none;
+}
+
+.container2 figure figcaption {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	padding: 13px;
+	width: 100%;
+	background-color: #4aaaa5;
+	position: relative;
+	top: -66px;
+}
+
+.contact p {
+	margin-top: 0px;
+	margin-bottom: 14px;
+}
+
+label {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	color: #777777;
+}
+
+input {
+    padding: .5rem;
+    width: 910px;
+    border: 1px solid #dddddd;
+}
+
+#uname {
+	height: 211px;
+}
+
+button {
+	background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 13px 31px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+	width: 100%;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+	height: 67px;
+	background-color: #666666;
+	border-top: solid 8px #4aaaa5;
+	text-align: center;
+}
+footer p {
+	font-size: 10px;
+	color: lightgray;
+	padding-top: 35px;
+	margin: 0;
+}	
