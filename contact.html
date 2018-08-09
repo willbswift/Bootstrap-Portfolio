@@ -1,55 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="assets/css/normalize.css" type="text/css" rel="stylesheet">
-	<link href="assets/css/style.css" type="text/css" rel="stylesheet">
-	<title>William Brian Swift's Contact Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <title>William Brian Swift's Contact Page</title>
 </head>
 
 <body>
-	<header>
-		<nav>
-			<a href="index.html">
-				<h1>William Brian Swift</h1>
-			</a>
-			<div class="container1">
-				<a href="index.html">About</a>
-				<a class="border-thingy" href="portfolio.html">Portfolio</a>
-				<a class="border-thingy" href="contact.html">Contact</a>
-			</div>
-		</nav>
-	</header>
-	<main>
-		<article>
-			<h2>Contact</h2>
-			<hr>
-			<section class="contact">
-				<p>
-					<label>Name</label>
-					<input type="text" placeholder="John Smith" id="display-name" name="ip-display" pattern="[A-Za-z\s]+" minlength="2" size="10"
-					 required />
-				</p>
-				<p>
-					<label>Email</label>
-					<input type="email" placeholder="example@gmail.com" size="10" required />
-				</p>
-				<p>
-					<label>Message</label>
-					<input type="text" id="uname" name="uname" size="10" required minlength="4" />
-				</p>
-				<p>
-					<button>Submit</button>
-				</p>
-			</section>
-		</article>
-	</main>
-	<footer>
-		<p>Copyright stardate 11807.31 &#169; </p>
-	</footer>
-</body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="row header-row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+            <a class="navbar-brand" href="index.html">
+                <h1>William Brian Swift</h1>
+            </a>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-4 collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav mr-auto">
+              <li cclass="nav-item active">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-thingy" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link border-thingy" href="contact.html">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
 
+    <main>
+        <div class="container article">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Contact</h2>
+                </div>                  
+            </div>
+            <hr>
+			<form class="contact">
+				<div class="form-group uname">
+				    <label for="exampleFormControlSelect1">Name</label>
+					<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Smith" name="ip-display" pattern="[A-Za-z\s]+" minlength="2"
+					 required>
+				</div>
+			  	<div class="form-group uemail">
+			    	<label for="exampleFormControlInput2">Email</label>
+			    	<input type="email" class="form-control" id="exampleFormControlInput2" placeholder="example@gmail.com" required>
+			  	</div>
+			  	<div class="form-group uemail">
+			    	<label for="exampleFormControlTextarea1">Message</label>
+			    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
+			 	</div>
+		 		<button class="btn btn-primary" type="submit">Submit</button>
+			</form>
+		</div>
+    </main>
+
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+               <p>&#169; Copyright stardate 11808.08</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>
